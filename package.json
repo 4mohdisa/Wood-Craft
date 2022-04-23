@@ -1,12 +1,26 @@
 {
-  "name": "personal-portfolio",
+  "name": "wood-craft",
   "version": "1.0.0",
   "description": "",
-  "main": "tailwind.config.js",
+  "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./index.css -o ./tailwind.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designcourse/personal-port.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designcourse/personal-port/issues"
+  },
+  "homepage": "https://github.com/designcourse/personal-port#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-alpha12"
+  }
 }

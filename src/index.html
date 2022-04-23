@@ -1,0 +1,428 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/feature.css">
+</head>
+<body class="bg-gray-100 ">
+    <nav  class=" nav flex flex-wrap items-center justify-between lg:px-20 py-3 px-4 bg-gray-100">
+        <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+          <svg class="fill-current h-8 mr-2 w-8" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 716 895">
+            <path d="M357.776 0l357.77 178.885v536.657l-357.77 178.89L0 715.542V178.885"></path>
+            <path class="text-white fill-current" d="M357.776 804.982l268.32-134.16v-178.89l-89.44-44.72 89.44-44.72V223.606L357.776 89.442v626.1l-178.89-89.44V178.885l-89.443 44.721v447.216l268.333 134.16z"></path>
+            <path d="M447.216 670.822l89.44-44.72v-89.45l-89.44-44.72v178.89zM447.216 402.492l89.44-44.721v-89.443l-89.44-44.722"></path>
+          </svg>
+          <span class="font-semibold text-xl tracking-tight">Wood Craft</span>
+        </div>
+      
+        <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+          <span class="navicon bg-grey-darkest flex items-center relative"></span>
+        </label>
+      
+        <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+          <li class="border-t md:border-none">
+            <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
+          </li>
+          
+          <li class="border-t md:border-none">
+            <a href="#about" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+          </li>
+          
+          <li class="border-t md:border-none">
+            <a href="#product" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Products</a>
+          </li>
+          <li class="border-t md:border-none">
+            <a href="#contact" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Contact Us</a>
+          </li>
+          
+        </ul>
+      </nav>
+    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner relative w-full  overflow-hidden">
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="https://images.unsplash.com/photo-1625163865002-c3563a586b95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+              class="block w-full lg:h-[40rem] h-[20rem] object-cover"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-5xl font-bold">Antique Furniture India</h5>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://www.ananyahandicrafts.com/wp-content/uploads/2020/09/Indian-Wood-Furniture.jpg"
+              class="block w-full lg:h-[40rem] h-[20rem] object-cover"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5  class="text-5xl font-bold">Indian Furniture Design</h5>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://images.unsplash.com/photo-1621293954908-907159247fc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              class="block w-full lg:h-[40rem] h-[20rem] object-cover"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5  class="text-5xl font-bold">Modern Furniture India</h5>
+            </div>
+          </div>
+
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section id="about" class="py-16 bg-gray-200  pt-30">
+        <div class="container flex lg:justify-between justify-center items-center mx-auto lg:flex-row flex-col lg:px-24 px-0">
+            <div class="lg:w-3/6 lg:px-0 px-3 lg:mr-10 mr-0">
+                <img class=" rounded-lg" src="https://images.unsplash.com/photo-1611486212355-d276af4581c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            </div>
+            <div class="lg:w-4/6 w-full lg:mt-0 mt-4">
+                <div class="lg:px-0 px-5">
+                    <h1 class="main-title">Serving you with premium Wooden Furniture</h1>
+                <p class="main-text">Wood Craft is a name synonymous with quality and perfection. We are a reputed name in the industry for manufacturing, exporting, and supplying an exclusive range of Upholstered Furniture, Recycled Wood Furniture, Reclaimed Wood Furniture, Industrial Vintage Furniture, Bar Furniture, Cafeteria Furniture, Dining Room Furniture, Hotel Furniture, Living Room Furniture, Restaurant Furniture Hand Painted Furniture, Contemporary Furniture, Brass Fitted Furniture, Bone Inlay Furniture, Tile Fitted Furniture, Antique Reproduction Furniture</p>
+                </div>
+                <div class="mt-5 grid grid-cols-2 gap-x-2 gap-y-5 lg:px-0 px-3">
+                    <div class="flex">
+                       <div class="mr-2 ">
+                         <img class="w-14" src="../public/icons/public_black_24dp.svg" alt="">                    
+                       </div>
+                       <div class=" flex flex-col  lg:mt-3 mt-0"> 
+                           <h2 class="text-lg font-bold">Nature of Business</h2>
+                           <p>Manufacturer, Exporter & Supplier</p>
+                       </div>
+                    </div>
+                    <div class="flex">
+                       <div class="mr-2">
+                         <img class="w-14" src="../public/icons/groups_black_24dp.svg" alt="">                    
+                       </div>
+                       <div class=" flex flex-col lg:mt-3 mt-0"> 
+                           <h2 class="text-lg font-bold">Number of Employees</h2>
+                           <p>45</p>
+                       </div>
+                    </div>
+                    <div class="flex">
+                       <div class="mr-2 ">
+                         <img class="w-14" src="../public/icons/business_black_24dp.svg" alt="">                    
+                       </div>
+                       <div class=" flex flex-col lg:mt-3 mt-0"> 
+                           <h2 class="text-lg font-bold">	
+                            Year of Establishment</h2>
+                           <p>1982</p>
+                       </div>
+                    </div>
+                    <div class="flex">
+                       <div class="mr-2">
+                         <img class="w-14" src="../public/icons/store_black_24dp.svg" alt="">                    
+                       </div>
+                       <div class=" flex flex-col lg:mt-3 mt-0"> 
+                           <h2 class="text-lg font-bold">Market Covered</h2>
+                           <p>Rajasthan, Gujarat, Delhi, etc. </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+  
+          <section id="product" class="overflow-hidden text-gray-700 mt-10">
+              <h1 class="text-5xl font-extrabold text-center mt-2">Products</h1>
+     <div class="lg:px-10 px-3 py-10 container grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-2 gap-y-5   mx-auto ">
+      <div class="flex justify-center ">
+        <div class="card rounded-lg shadow-lg bg-white max-w-sm  overflow-hidden hover:shadow-xl ">
+          <a href="#!">
+            <img class="transition-all rounded-t-lg h-[16rem] w-full object-cover" src="https://m.media-amazon.com/images/I/61JLG9VEm8S._SL1173_.jpg" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Home Furniture</h5>
+            <p class="text-gray-700 text-base mb-4">
+              Home furniture Wooden Sofa Set for Living Room and Office Five Seater.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="card rounded-lg shadow-lg bg-white max-w-sm  overflow-hidden hover:shadow-xl ">
+          <a href="#!">
+            <img class="transition-all rounded-t-lg h-[16rem] w-full object-cover" src="https://cdn.shopify.com/s/files/1/0248/7766/2271/products/Acacia_bed45.jpg?v=1647251577" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Wooden Beds</h5>
+            <p class="text-gray-700 text-base mb-4">
+              Modern Design | Spacious Storage | Height Optimised | Termite-Resistant Build
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="card rounded-lg shadow-lg bg-white max-w-sm  overflow-hidden hover:shadow-xl ">
+          <a href="#!">
+            <img class="transition-all rounded-t-lg h-[16rem] w-full object-cover" src="https://www.decoraid.com/wp-content/uploads/2021/04/Interior-of-modern-hallway-with-mirror-scaled-1125x675.jpeg" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Interior Designer Furniture</h5>
+            <p class="text-gray-700 text-base mb-4">
+              Interior Designer Furniture India, Fine Finishing, High Strength
+            </p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="card rounded-lg shadow-lg bg-white max-w-sm  overflow-hidden hover:shadow-xl ">
+          <a href="#!">
+            <img class="transition-all rounded-t-lg h-[16rem] w-full object-cover" src="https://images.unsplash.com/photo-1616627408260-a72f00c8af29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Storage Furniture</h5>
+            <p class="text-gray-700 text-base mb-4">
+              Albert Engineered Wood 2 Door Cabinet in Oak Colour
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+</section>
+<section class="mt-24 bg-red-500 py-14">
+    <div class="lg:px-28 px-5 container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-2  gap-y-2  mx-auto ">
+        <div class="rounded-xl flex h-96 flex-col text-center align-center justify-center bg-gray-100 transition-all shadow-lg hover:shadow-2xl cursor-pointer hover:translate-y-[-10px]">
+            <div class="text-center">
+                <img class="w-20 inline" src="../public/icons/groups_black_24dp.svg" alt="">                    
+              </div>
+              <div class="my-4">
+                <h1 class="text-3xl font-bold">Team</h1>
+              </div>
+              <div class="px-10">
+                    <p>Our company is blessed with a proficient team. The team consists of highly skilled artisans, marketing personnel, well-qualified engineers, etc. who are well versed with their jobs. The unmatched services offered by our supplying team have earned us a huge list of clients from the National and International Market.</p>
+              </div>
+        </div>
+        <div class="rounded-xl flex h-96 flex-col text-center align-center justify-center bg-gray-100 transition-all shadow-lg hover:shadow-2xl cursor-pointer hover:translate-y-[-10px]">
+            <div class="text-center">
+                <img class="w-20 inline" src="../public/icons/category_black_24dp.svg" alt="">                    
+              </div>
+              <div class="my-4">
+                <h1 class="text-3xl font-bold">Products</h1>
+              </div>
+              <div class="px-10">
+                 <p>
+                    Incepted in the year 1998, Wood Craft is a well trusted Manufacturer, Exporter, and Supplier of premium Upholstered Furniture, Recycled Wood Furniture, Reclaimed Wood Furniture, Industrial Vintage Furniture, Hand Painted Furniture, Contemporary Furniture, Brass Fitted Furniture, Bone Inlay Furniture etc
+                 </p>
+              </div>
+        </div>
+        <div class="rounded-xl flex h-96 flex-col text-center align-center justify-center bg-gray-100 transition-all shadow-lg hover:shadow-2xl cursor-pointer hover:translate-y-[-10px]">
+            <div class="text-center">
+                <img class="w-20 inline" src="../public/icons/public_black_24dp.svg" alt="">                    
+              </div>
+              <div class="my-4">
+                <h1 class="text-3xl font-bold">Network</h1>
+              </div>
+              <div class="px-10">
+                   <p>
+                    Owing to our superior quality products and on-time delivery service, we are able to set up a huge network base across the globe. We are successful in establishing our business in countries like :Russia, Germany, France, Lebanon,Italy, Jordan.
+                   </p>
+              </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-24  bg-gray-200 py-10" id="contact">
+  <div class="text-center">
+    <h1 class="text-5xl font-extrabold">Contact Us</h1>
+  </div>
+
+  <div class="flex lg:flex-row flex-col lg:px-24 px-0 pl-10 mt-10 ">
+    <div class="lg:w-2/4 w-full">
+      <div class="mb-5 flex align-center">
+        <img src="./../public/icons/call_FILL0_wght400_GRAD0_opsz48.svg" class="h-14 w-14 mr-3">
+        <div>
+          <h1 class="font-bold text-2xl">Contact Number</h1>
+        <p class=" text-lg text-gray-500">8107900786</p>
+        </div>
+      </div>
+      <div class="mb-5 flex align-center">
+        <img src="./../public/icons/home_FILL0_wght400_GRAD0_opsz48.svg" class="h-14 w-14 mr-3">
+        <div>
+          <h1  class="font-bold text-2xl">Address</h1>
+          <p class=" text-lg text-gray-500">Cheerghar baldev nagar 9 number gali , Jodhpur</p>
+          <p class=" text-md italic text-gray-500">Rajasthan, India</p>
+        </div>
+      </div>
+      <div class="mb-5 flex align-center">
+        <img src="./../public/icons/person_FILL0_wght400_GRAD0_opsz48.svg" class="h-14 w-14 mr-3">
+    <div>
+      <h1  class="font-bold text-2xl">Name</h1>
+      <p class=" text-lg text-gray-500">Abdul Sharif</p>
+    </div>
+      </div>
+    </div>
+  
+    <div class="lg:w-2/4 w-full">
+      <iframe class="lg:w-full w-5/6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.9648114781467!2d73.01812595077993!3d26.2303328833447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b8d848d1771%3A0x25e2b4a944acd1d9!2sR.S.M%20International%20School!5e0!3m2!1sen!2sin!4v1650710596241!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="text-center lg:text-left bg-gray-100 text-gray-600">
+
+  <div class="mx-6 py-10 text-center md:text-left border-t-4">
+    <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="">
+        <h6 class="
+            uppercase
+            font-semibold
+            mb-4
+            flex
+            items-center
+            justify-center
+            md:justify-start
+          ">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cubes"
+            class="w-4 mr-3" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z">
+            </path>
+          </svg>
+          Wood Craft
+        </h6>
+        <p class="italic text-gray-500">
+          Wood Craft is a name synonymous with quality and perfection. We are a reputed name in the industry for manufacturing, exporting, and supplying an exclusive range of Upholstered Furniture, Recycled Wood Furniture
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          Products
+        </h6>
+        <p class="mb-4">
+          <a href="#product" class="text-gray-600">Home Furniture</a>
+        </p>
+        <p class="mb-4">
+          <a href="#product" class="text-gray-600">Wooden Beds</a>
+        </p>
+        <p class="mb-4">
+          <a href="#product" class="text-gray-600">Interior Designer Furniture</a>
+        </p>
+        <p>
+          <a href="#product" class="text-gray-600">Storage Furniture</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          Useful links
+        </h6>
+        <p class="mb-4">
+          <a href="#" class="text-gray-600">Home</a>
+        </p>
+        <p class="mb-4">
+          <a href="#about" class="text-gray-600">About</a>
+        </p>
+        <p class="mb-4">
+          <a href="#product" class="text-gray-600">Products</a>
+        </p>
+        <p>
+          <a href="#contact" class="text-gray-600">Contact Us</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          Contact
+        </h6>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="currentColor"
+              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+            </path>
+          </svg>
+          Cheerghar baldev nagar 9 number gali Jodhpur, Rajasthan, India
+        </p>
+
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
+            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+            </path>
+          </svg>
+          + 91 810 790 0786 
+        </p>
+        <p class="flex items-center justify-center md:justify-start">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="print"
+            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
+            </path>
+          </svg>
+          + 91 810 790 0786 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-6 bg-gray-200">
+    <span>© 2021 Copyright:</span>
+    <a class="text-gray-600 font-semibold" href="#">Wood Craft</a>
+  </div>
+</footer>
+ <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html> 
